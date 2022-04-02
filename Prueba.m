@@ -35,6 +35,11 @@ Nmax=2000
 [tabla,x,iter,errabs,errrel]=C5_newton(f,df,x0,tol,Nmax)
 %% Secante
 
+f =@(x) 3*x/(sqrt((x^2)+9))+ 0.175 - x
+x0=1
+x1=2
+tol=0.00005
+Nmax=2000
 
-
+[tabla,x,iter,errabs,errrel]=C6_secante(f,x0,x1,tol,Nmax)
 %% Raices Multiples
