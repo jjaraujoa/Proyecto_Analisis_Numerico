@@ -5,6 +5,7 @@ h= 0.001
 Nmax=500
 
 [a,b,iter]=C1_busquedas(f,x0,h,Nmax)
+
 %% Bisección
 f =@(x) x^3 - 7.51*x^2 + 18.4239*x - 14.8331;
 a=3;
@@ -26,13 +27,14 @@ Nmax= 50;
 
 f =@(x) 3*x/(sqrt((x^2)+9))+ 0.175 - x
 syms x
-diff(f,x)
+diff(df,x)
 df= @(x) 3/(x^2 + 9)^(1/2) - (3*x^2)/(x^2 + 9)^(3/2) - 1
 x0=1
 tol=0.00005
 Nmax=2000
 
 [tabla,x,iter,errabs,errrel]=C5_newton(f,df,x0,tol,Nmax)
+
 %% Secante
 
 f =@(x) 3*x/(sqrt((x^2)+9))+ 0.175 - x
@@ -42,4 +44,13 @@ tol=0.00005
 Nmax=2000
 
 [tabla,x,iter,errabs,errrel]=C6_secante(f,x0,x1,tol,Nmax)
+
 %% Raices Multiples
+f =@(x) 3*x/(sqrt((x^2)+9))+ 0.175 - x
+df = @(x) 3/(x^2 + 9)^(1/2) - (3*x^2)/(x^2 + 9)^(3/2) - 1
+d2f = @(x) (9*x^3)/(x^2 + 9)^(5/2) - (9*x)/(x^2 + 9)^(3/2)
+x0=1
+tol=0.00005
+Nmax=2000
+
+[tabla,x,iter,errabs,errrel]=C7_raicesmlt(f,df,d2f,x0,tol,Nmax)
