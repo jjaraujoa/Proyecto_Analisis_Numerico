@@ -4,7 +4,7 @@ x0=2;
 h= 0.001
 Nmax=500
 
-[a,b,iter]=C1_busquedas(f,x0,h,Nmax)
+[tabla,a,b,iter,errabs,errrel]=C1_busquedas(f,x0,h,Nmax)
 
 %% Bisección
 f =@(x) x^3 - 7.51*x^2 + 18.4239*x - 14.8331;
