@@ -25,7 +25,13 @@ Nmax= 50;
 [tabla,x,iter,errabs,errrel]=C3_reglafalsa(f,a,b,tol,Nmax)
 
 %% Punto Fijo
+f =@(x) x^2 - 2*x + 2 - 14.8331 - 2.718^x;
+g =@(x) log(x^2 - 2*x + 2);
+x0=0,5;
+tol=0.00005;
+Nmax= 50;
 
+[tabla,x,iter,errabs,errrel]=C4_puntofijo(g,x0,tol,Nmax)
 
 
 %% Newton
