@@ -1,3 +1,11 @@
+%Este programa encuentra un intervalo donde f(x) tiene cambio de signo
+%usando el método de búsquedas incrementales
+
+%Entradas: 
+%f, función continua
+%x0, punto inicial
+%h, paso
+%Nmax, número máximo de iteraciones
 %Salidas
 %a, extremo izquierdo del intervalo
 %b, extremo derecho del intervalo

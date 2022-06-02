@@ -1,18 +1,18 @@
-%Este programa halla la solución a la ecuación f(x)=0 en el intervalo [a,b]
-%usando el método de la bisección. 
-
-%Entradas: 
-%f, función continua
-%a, extremo derecho del intervalo inicial
-%b, extremo final del intervalo final
-%tol, tolerancia
-%Nmax, número máximo de iteraciones
-
-%Salidas
-%x, solución
-%iter, número de iteraciones
-%errabs, error absoluto
-%errrel, error relativo
+% Este programa halla la solución a la ecuación f(x)=0 en el intervalo [a,b]
+% usando el método de la bisección. 
+% 
+% Entradas: 
+% f, función continua
+% a, extremo derecho del intervalo inicial
+% b, extremo final del intervalo final
+% tol, tolerancia
+% Nmax, número máximo de iteraciones
+% 
+% Salidas
+% x, solución
+% iter, número de iteraciones
+% errabs, error absoluto
+% errrel, error relativo
 % tabla, Tabla con cada iteración 
 
 %Creado por: Samir Posada

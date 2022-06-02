@@ -1,19 +1,19 @@
-%Este programa halla la solución a la ecuación f(x)=0 usando el método de
-%la secante
-
-%Entradas: 
-%f, función continua
-%x0, aproximación inicial
-%x1, aproximación inicial
-%tol, tolerancia
-%Nmax, número máximo de iteraciones
-
-%Salidas
-%x, solución
-%iter, número de iteraciones
-%errabs, error absoluto
-%errrel, error relativo
-%tabla, Tabla con cada iteración 
+% Este programa halla la solución a la ecuación f(x)=0 usando el método de
+% la secante
+% 
+% Entradas: 
+% f, función continua
+% x0, aproximación inicial
+% x1, aproximación inicial
+% tol, tolerancia
+% Nmax, número máximo de iteraciones
+% 
+% Salidas
+% x, solución
+% iter, número de iteraciones
+% errabs, error absoluto
+% errrel, error relativo
+% tabla, Tabla con cada iteración 
 
 %Creado por: Samir Posada
 %Modificado por Jorge Araujo
